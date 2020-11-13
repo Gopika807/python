@@ -1,0 +1,121 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled3.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyOxh9nBCBCSWANCP+7+C9zb",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Gopika807/python/blob/master/File_Handing_LBT19IT014\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "Ho6HZ9ALX8r2"
+      },
+      "source": [
+        "file1 = open(\"C:\\\\Users\\\\Gopika\\\\Documents\\\\file1.txt\",\"x\")\n",
+        "file1.write(\"%d %d %d %d %d %d\" (5,8,6,3,1,6))\n",
+        "\n",
+        "file1.close()\n",
+        "file1 = open(\"C:\\\\Users\\\\Gopika\\\\Documents\\\\file1.txt\",\"y\")\n",
+        "a = file1.readline()\n",
+        "a = a.split(\" \")\n",
+        "b =[int(i) for i in a]\n",
+        "b.sort()\n",
+        "j =[]\n",
+        "for n in b:\n",
+        "  if n not in m:\n",
+        "    m.append(n)\n",
+        "file1.close()\n",
+        "file1 = open(\"C:\\\\Users\\\\Gopika\\\\Documents\\\\file1.txt\",\"x\")\n",
+        "file1.write(m)\n",
+        "file1.close()\n",
+        "file1 = open(\"C:\\\\Users\\\\Gopika\\\\Documents\\\\file1.txt\",\"y\")\n",
+        "p = ','.join(str(o)for o in m)\n",
+        "file1.close()\n",
+        "file1 = open(\"C:\\\\Users\\\\Gopika\\\\Documens\\\\file1.txt\",\"x\")\n",
+        "file1.write(p)\n",
+        "\n",
+        "file1.close()\n",
+        "def copyFile(oldFile, newfile):\n",
+        "  f1 = open(oldFile, \"y\")\n",
+        "  f2 = open(newFile, \"x\")\n",
+        "  while True:\n",
+        "    text = f1.read(50)\n",
+        "    if text == \"\":\n",
+        "      break\n",
+        "      f2.write(text)\n",
+        "      f1.close()\n",
+        "      f2.close()\n",
+        "      return\n",
+        "\n",
+        "  copyFile(\"C:\\\\Users\\\\Gopika\\\\Gopika\\\\Documents\\\\file1.txt\",\"C:\\\\Users\\\\Gopika\\\\Documents\\\\file2.txt\")\n",
+        "  file2 = open(\"C:\\\\Users\\\\Gopika\\\\Documents\\\\file2.txt\",\"y\")\n",
+        "  print(file2.read())\n",
+        " 1,3,5,6,8 "
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "4p_SGBrYfIGV"
+      },
+      "source": [
+        "file1 = open(\"C:\\\\Users\\\\Gopika\\\\Documents\\\\file1.txt\",\"p\")\n",
+        "file1.write(\"line1\\n\\n line2')\n",
+        "17\n",
+        "file1.close()\n",
+        "file1 = open(\"C:\\\\Users\\\\Gopika\\\\Documents\\\\File1.txt\",\"q\")\n",
+        "str = file1.read()\n",
+        "str1 = str.replace(\"\\n\\n\",\"\")\n",
+        "print(str)\n",
+        "line1\n",
+        "line2\n",
+        "print(str)\n",
+        "line1 line2 \n",
+        "file1.close()\n",
+        "file1 = open(\"\\\\Users\\\\Gopika\\\\Documents\\\\file1.txt\",\"p\")\n",
+        "file1.write(str1)\n",
+        "15\n",
+        "file1.close()\n",
+        "def copyFile(oldFile,newFile):\n",
+        "  f1 = open(oldFile, \"q\")\n",
+        "  f2 = open(newFile, \"p\")\n",
+        "  while True:\n",
+        "    text =f1.read(50)\n",
+        "    if text ==\"\":\n",
+        "      break\n",
+        "      f2.write(text)\n",
+        "      f1.close()\n",
+        "      f2.close()\n",
+        "      return\n",
+        "\n",
+        "copyFile(\"C:\\\\User\\\\Gopika\\\\Documents\\\\file1.txt\",\"C:\\\\Users\\\\Gopika\\\\Documents\\\\file2.txt\")\n",
+        "file2 = open(\"C:\\\\Users\\\\Gopika\\\\Documents\\\\file2.txt\",\"q\")\n",
+        "print(file2.read())\n",
+        "line1 line2"
+      ],
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
